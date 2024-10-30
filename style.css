@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-container {
+  width: 500px;
+  aspect-ratio: 1 / 1;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+}
+.board-container {
+  border: 1px solid #fefaf1;
+  grid-area: 2 / 2 / -2 / -2;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+.number-order {
+  background-color: #2e0702;
+  grid-area: 1 / 1 / 11 / 2;
+  display: grid;
+  grid-template-rows: repeat(10, 1fr);
+}
+.reverse-number-order {
+  background-color: #2e0702;
+  grid-area: -11 / 11 / -1 / 10;
+  display: grid;
+  grid-template-rows: repeat(10, 1fr);
+}
+.alphabet-order {
+  background-color: #2e0702;
+  grid-area: 10 / 2 / -1 / -2;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+.reverse-alphabet-order {
+  background-color: #2e0702;
+  grid-area: 1 / 2 / 2 / 10;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+.odd {
+  background-color: #fefaf1;
+}
+.even {
+  background-color: #2e0702;
+}
+.order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fefaf1;
+}
+.reverse {
+  transform: rotate(180deg);
+}
